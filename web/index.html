@@ -41,6 +41,28 @@
 </head>
 <body>
   <script>
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDw6EoQd_64mA2Q4t1Fg-7gYDwSGu_nrCo",
+  authDomain: "book-collection-b4a33.firebaseapp.com",
+  projectId: "book-collection-b4a33",
+  storageBucket: "book-collection-b4a33.appspot.com",
+  messagingSenderId: "862592118446",
+  appId: "1:862592118446:web:89b7937efad0939b08c73f",
+  measurementId: "G-RE81KH5B9L"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
